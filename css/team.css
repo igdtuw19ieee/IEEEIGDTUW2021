@@ -7,6 +7,17 @@
   font-family: "Exo 2", sans-serif;
 }
 
+
+.meetTeam{
+  text-align: center;
+  padding-top: 60px;
+}
+
+.fimg{
+  height: 16.2em;
+  width: auto;
+}
+
 .faculty-team-card{
   background-color: #212121c7;
   border-radius: 10px;
