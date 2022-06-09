@@ -1,10 +1,4 @@
-/* :root {
-  --crsl-bg: transparent;
-  --box-bg: #e0e0e0;
-  --box-shadow: #0000001c;
-  --box-shadow-border: #0000000f;
-  --box-border: rgba(75, 75, 75, 0.096);
-} */
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 .achievement-container {
   text-align: center;
