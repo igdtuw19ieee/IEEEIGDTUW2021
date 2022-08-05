@@ -136,6 +136,8 @@
 .page-event .page-heading::first-letter {
   color: #db2d8e;
 }
+.page{
+}
 @media (min-width: 992px) {
   .upcoming-event-list .event-block .sec-1 table .title {
     display: none;
