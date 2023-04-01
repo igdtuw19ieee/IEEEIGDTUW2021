@@ -16,6 +16,7 @@
     <!-- Google Fonts  -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
     <!-- Libs and Plugins CSS -->
+    <link rel="stylesheet" href="./css/newsletter.css">
     <link rel="stylesheet" href="inc/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="inc/animations/css/animate.min.css">
     <link rel="stylesheet" href="inc/font-awesome/css/font-awesome.min.css"> <!-- Font Icons -->
@@ -139,20 +140,73 @@
                     </div>
                 </div>
             </div>
+<!-- DROPDOWN -->
+<!-- <div class="row ">
+    <div class="col-md-12 mobileFilter text-center">
+        <div class="dropdown my-menu ">
+            <button class="btn  dropdown-toggle tags-button" type="button"
+                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Filter By Year
+            </button>
 
-            <div class="container" style="width: 80%;">
-                <div class="news" style="display:flex;">
-                    <object class="div1" style="width:100%;border: 2px solid; margin-right: 30px;" height="1200vh" data="newsletter.pdf" type="application/pdf">
-                        <p>Your web browser doesn't have a PDF plugin.
-                        Instead you can <a href="https://drive.google.com/file/d/1hZuGHQzwvAURLMu9LizK6DQgaZVjpGYw/view?usp=sharing">click here to
-                        download the PDF file.</a></p>
-                    </object>
+              <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item "  onclick="filterObjects('news21')"> 2022</a>
+                <a class="dropdown-item  " onclick="filterObjects('news22')"> 2021</a>
+            </div>
+        </div>
+      </div>
+    </div> -->
 
-                <object class="div2" style="width:100%; " height="1200vh" data="NewsLetter2022.pdf" type="application/pdf">
-                    <p>Your web browser doesn't have a PDF plugin.
-                    Instead you can <a href="https://drive.google.com/file/d/1hZuGHQzwvAURLMu9LizK6DQgaZVjpGYw/view?usp=sharing">click here to
-                    download the PDF file.</a></p>
-                </object>
+      <!-- DROPDOWN END -->
+
+       <!-- DROPDOWN -->
+    <div class="row ">
+        <div class="col-md-12 mobileFilter text-center">
+            <div class="dropdown my-menu ">
+                <button class="btn  dropdown-toggle tags-button" type="button"
+                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Filter By Year
+                </button>
+  
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <!-- <a class="dropdown-item  " onclick="filterObjects('all')">Show All</a> -->
+                    <a class="dropdown-item "  onclick="filterObjects('team22')"> 2022</a>
+                    <a class="dropdown-item  " onclick="filterObjects('team21')"> 2021</a>
+                </div>
+            </div>
+          </div>
+        </div>
+  
+          <!-- DROPDOWN END -->
+  
+  
+      <!-- ******************************************************************************************** -->
+      <!-- 2022 TEAM  2022 TEAM  2022 TEAM  2022 TEAM  2022 TEAM 2022 TEAM -->
+      <!-- ******************************************************************************************** -->
+  
+       <!--Presidents-->
+       <div class="teams team21 ">
+        <div class="md:mx-5 lg:mx-36">
+          <hr class="text-center uppercase hr-text text-3xl md:text-4xl font-bold pb-10" data-content="NewsLetter">
+          <object class=" divs " style="width:100%; border: 2px solid; margin-right: 30px;" height="1200vh" data="newsletter.pdf" type="application/pdf">
+            <p>Your web browser doesn't have a PDF plugin.
+            Instead you can <a href="https://drive.google.com/file/d/1hZuGHQzwvAURLMu9LizK6DQgaZVjpGYw/view?usp=sharing">click here to
+            download the PDF file.</a></p>
+        </object>
+        </div>
+        </div>
+
+        <div class="teams team22 ">
+            <div class="md:mx-5 lg:mx-36">
+              <hr class="text-center uppercase hr-text text-3xl md:text-4xl font-bold pb-10" data-content="NewsLetter">
+              <object class=" divs " style="width:100%;border: 2px solid; margin-right: 30px;" height="1200vh" data="NewsLetter2022.pdf" type="application/pdf">
+                <p>Your web browser doesn't have a PDF plugin.
+                Instead you can <a href="https://drive.google.com/file/d/1hZuGHQzwvAURLMu9LizK6DQgaZVjpGYw/view?usp=sharing">click here to
+                download the PDF file.</a></p>
+            </object>
+        </div>
         </div>
 
         </section>
@@ -237,7 +291,7 @@
 
 
 
-
+    <script src="./js/newsletter.js"></script>
     <!-- Plugins JS -->
     <script src="inc/jquery/jquery-1.11.1.min.js"></script>
     <script src="inc/bootstrap/js/bootstrap.min.js"></script>
