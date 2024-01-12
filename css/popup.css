@@ -1,0 +1,188 @@
+/* popup.css */
+
+.popup-container {
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.5);
+     animation: fadeIn 0.5s ease-in-out;
+     z-index: 9999; /* Set a high z-index value */
+ }
+ 
+ .popup-content {
+     position: fixed; /* Change to fixed position */
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background: linear-gradient(#250b41,#61092a);
+     border: 4px solid #000000;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     padding: 20px;
+     border-radius: 15px;
+     color: rgb(255, 255, 255);
+     text-align: center;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     z-index: 10000; /* Set a higher z-index value */
+     animation: fadeInContent 8s ease-in-out infinite; /* Adjusted animation */
+     width: 50%; /* Set the desired width (e.g., 50% of the screen) */
+     max-width: 500px; /* Set a maximum width if needed */
+
+     @media only screen and (max-width: 768px) {
+      width: 80%; /* Adjust the width for smaller screens */
+      max-width: none; /* Remove maximum width for smaller screens */
+  }
+ }
+ 
+ .popup-content h2 {
+     font-size: 18px; /* Specific selector for the heading */
+ }
+ .popup-content h1 {
+  font-size: 25px; /* Specific selector for the heading */
+}
+ 
+ .close-btn {
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     font-size: 20px;
+     cursor: pointer;
+     color: rgb(255, 255, 255);
+ }
+ 
+ .check-out-btn {
+     background-color: #3c85cf;
+     color: #ffffff;
+     padding: 10px 20px;
+     border: 2px solid transparent; /* Set initial border properties */
+     border-radius: 5px;
+     cursor: pointer;
+     font-size: large;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     transition: border 0.3s ease; /* Add transition for smooth animation */
+
+     @media only screen and (max-width: 768px) {
+      padding: 0.6em 1em; /* Adjust padding for smaller screens */
+ }
+}
+ 
+ .check-out-btn:hover {
+     border: 2px solid #ffffff; /* Change border color on hover */
+ }
+ 
+ /* Animation */
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+     }
+     to {
+         opacity: 1;
+     }
+ }
+ 
+ @keyframes fadeInContent {
+     0%, 100% {
+         color: #ffee00; /* Change to your first color */
+     }
+     20% {
+         color: #ffffff; /* Change to your second color */
+     }
+     40% {
+         color: #00ff00; /* Change to your third color */
+     }
+     60% {
+         color: #00f2ff; /* Change to your fourth color */
+     }
+     80% {
+          color: #ff0077; /* Change to your fifth color */
+      }
+ }
+
+ .check-out-btn {
+     padding: 0.6em 2em;
+     border: none;
+     outline: none;
+     color: rgb(255, 255, 255);
+     background: #111;
+     cursor: pointer;
+     position: relative;
+     z-index: 0;
+     border-radius: 10px;
+     user-select: none;
+     -webkit-user-select: none;
+     touch-action: manipulation;
+   }
+   
+   .check-out-btn:before {
+     content: "";
+     background: linear-gradient(
+       45deg,
+       #ff0000,
+       #ff7300,
+       #fffb00,
+       #48ff00,
+       #00ffd5,
+       #002bff,
+       #7a00ff,
+       #ff00c8,
+       #ff0000
+     );
+     position: absolute;
+     top: -2px;
+     left: -2px;
+     background-size: 400%;
+     z-index: -1;
+     filter: blur(5px);
+     -webkit-filter: blur(5px);
+     width: calc(100% + 4px);
+     height: calc(100% + 4px);
+     animation: glowing-check-out-btn 20s linear infinite;
+     transition: opacity 0.3s ease-in-out;
+     border-radius: 10px;
+   }
+   
+   @keyframes glowing-check-out-btn {
+     0% {
+       background-position: 0 0;
+     }
+     50% {
+       background-position: 400% 0;
+     }
+     100% {
+       background-position: 0 0;
+     }
+   }
+   
+   .check-out-btn:after {
+     z-index: -1;
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background: #0a2d50;
+     left: 0;
+     top: 0;
+     border-radius: 10px;
+   }
+
+@media only screen and (max-width: 768px) {
+  .popup-content {
+      width: 80%; /* Adjust the width for smaller screens */
+      max-width: none; /* Remove maximum width for smaller screens */
+  }
+}
+
+.check-out-btn {
+  padding: 0.6em 1em; /* Adjust padding for smaller screens */
+}
+
+.check-out-btn:before {
+  width: calc(100% + 2px); /* Adjust width for smaller screens */
+  height: calc(100% + 2px); /* Adjust height for smaller screens */
+}
+
+.check-out-btn:after {
+  border-radius: 5px; /* Adjust border-radius for smaller screens */
+}

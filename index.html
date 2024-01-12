@@ -13,6 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css\popup.css" />
     <!-- Google Fonts  -->
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,700,500" rel="stylesheet" type="text/css" />
     <!-- Body font -->
@@ -50,6 +51,24 @@
 <body data-spy="scroll" data-target="#main-navbar">
     <div class="page-loader"></div>
     <!-- Display loading image while page loads -->
+
+    
+    <!-- Pop-up container -->
+<div class="popup-container" id="popupContainer">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h1>WIEMPOWER</h1>
+        <h2>is BACK</h2>
+        <h2>with its</h2>
+        <h2>5th EDITION !!</h2>
+        <br>
+        
+        <a href="https://github.com/IEEE-IGDTUW/Wiempower-5.0" target="_blank"><button class="check-out-btn">Check Out!</button></a>
+    </div>
+</div>
+
+
+
     <div class="body">
         <!--========== BEGIN HEADER ==========-->
         <header id="header" class="header-main">
@@ -79,7 +98,7 @@
                         
                        
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a  href="https://ieee-igdtuw.github.io/wie-website/index.html" target="_blank">WIEMPOWER</a></li>
+                            <li><a  href="https://github.com/IEEE-IGDTUW/Wiempower-5.0" target="_blank">WIEMPOWER</a></li>
 
                             <li><a href="index.html">Home</a></li>
                             <li><a href="#about">About</a></li>
@@ -388,6 +407,7 @@
     <script src="inc/jquery.easing.min.js"></script>
     <script src="inc/jquery.counterup.min.js"></script>
     <script src="inc/smoothscroll.js"></script>
+    <script src="js\popup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
 
